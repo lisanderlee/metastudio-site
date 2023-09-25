@@ -12,10 +12,10 @@ import screenshotProfitLoss from '@/images/screenshots/profit-loss.png'
 
 const features = [
   {
-    name: 'Reporting',
-    summary: 'Stay on top of things with always up-to-date reporting features.',
+    name: 'Accessibility',
+    summary: 'Always On, Always Accessible',
     description:
-      'We talked about reporting in the section above but we needed three items here, so mentioning it one more time for posterity.',
+      'Wherever you are, our platform delivers consistent 3D visuals. From smartphones to workstations, stay immersed in your 3D universe.',
     image: screenshotProfitLoss,
     icon: function ReportingIcon() {
       let id = useId()
@@ -46,11 +46,11 @@ const features = [
     },
   },
   {
-    name: 'Inventory',
+    name: 'Flexibility',
     summary:
-      'Never lose track of what’s in stock with accurate inventory tracking.',
+      '3D Tools & Viewer',
     description:
-      'We don’t offer this as part of our software but that statement is inarguably true. Accurate inventory tracking would help you for sure.',
+      'With our customizable viewer, design your 3D journey precisely to your preferences. Additionally, effortlessly convert formats and fine-tune for optimal performance. GLTF, GLB, OBJ and FBX',
     image: screenshotInventory,
     icon: function InventoryIcon() {
       return (
@@ -74,11 +74,11 @@ const features = [
     },
   },
   {
-    name: 'Contacts',
+    name: 'Security',
     summary:
-      'Organize all of your contacts, service providers, and invoices in one place.',
+      'Enterprise-Level Security',
     description:
-      'This also isn’t actually a feature, it’s just some friendly advice. We definitely recommend that you do this, you’ll feel really organized and professional.',
+      'Your 3D assets are invaluable, and their security is our priority. Benefit from top-tier protection measures, ensuring your data remains uncompromised and in trusted hands.',
     image: screenshotContacts,
     icon: function ContactsIcon() {
       return (
@@ -117,15 +117,15 @@ function Feature({ feature, isActive, className, ...props }) {
       <h3
         className={clsx(
           'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
+          isActive ? 'text-blue-600' : 'text-white',
         )}
       >
         {feature.name}
       </h3>
-      <p className="mt-2 font-display text-xl text-slate-900">
+      <p className="mt-2 font-display text-xl text-white">
         {feature.summary}
       </p>
-      <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
+      <p className="mt-4 text-sm text-white">{feature.description}</p>
     </div>
   )
 }
@@ -137,7 +137,7 @@ function FeaturesMobile() {
         <div key={feature.summary}>
           <Feature feature={feature} className="mx-auto max-w-2xl" isActive />
           <div className="relative mt-10 pb-10">
-            <div className="absolute -inset-x-4 bottom-0 top-8 bg-slate-200 sm:-inset-x-6" />
+            <div className="absolute -inset-x-4 bottom-0 top-8 bg-gray-800 sm:-inset-x-6" />
             <div className="relative mx-auto w-[52.75rem] overflow-hidden rounded-xl bg-white shadow-lg shadow-slate-900/5 ring-1 ring-slate-500/10">
               <Image
                 className="w-full"
@@ -176,7 +176,7 @@ function FeaturesDesktop() {
               />
             ))}
           </Tab.List>
-          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-slate-200 px-14 py-16 xl:px-16">
+          <Tab.Panels className="relative mt-20 overflow-hidden rounded-4xl bg-gray-800 px-14 py-16 xl:px-16">
             <div className="-mx-5 flex">
               {features.map((feature, featureIndex) => (
                 <Tab.Panel
@@ -213,14 +213,14 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32 bg-gray-900"
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
-          <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-            Simplify everyday business tasks.
+          <h2 className="font-display font-bold  text-3xl tracking-tight text-white sm:text-4xl">
+            Simplify everyday tasks.
           </h2>
-          <p className="mt-4 text-lg tracking-tight text-slate-700">
+          <p className="mt-4 text-lg tracking-tight text-white">
             Because you’d probably be a little confused if we suggested you
             complicate your everyday business tasks instead.
           </p>

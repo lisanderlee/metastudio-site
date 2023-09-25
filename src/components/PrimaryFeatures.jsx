@@ -12,29 +12,31 @@ import screenshotPayroll from '@/images/screenshots/payroll.png'
 import screenshotReporting from '@/images/screenshots/reporting.png'
 import screenshotVatReturns from '@/images/screenshots/vat-returns.png'
 
+
+
 const features = [
   {
-    title: 'Payroll',
+    title: '3D Assets CMS',
     description:
-      "Keep track of everyone's salaries and whether or not they've been paid. Direct deposit not supported.",
+      "Organize and share your 3D universe. Centralize, categorize, and take command of your assets with ease.",
     image: screenshotPayroll,
   },
   {
-    title: 'Claim expenses',
+    title: 'Feedback & Control',
     description:
-      "All of your receipts organized into one place, as long as you don't mind typing in the data by hand.",
+      "Empower your team collaboration with intuitive feedback loop, streamlined approval workflows, and robust version management. Quicken your market entry and amplify the ROI of each 3D project.",
     image: screenshotExpenses,
   },
   {
-    title: 'VAT handling',
+    title: 'Viewers Galore',
     description:
-      "We only sell our software to companies who don't deal with VAT at all, so technically we do all the VAT stuff they need.",
+      "Engage and captivate with customizable viewers. Whether it's 3D, AR, VR, or 360°, immerse your audience in a visual treat.",
     image: screenshotVatReturns,
   },
   {
-    title: 'Reporting',
+    title: 'E-Commerce Integration',
     description:
-      'Easily export your data into an Excel spreadsheet where you can do whatever the hell you want with it.',
+      'Infuse your online store with captivating 3D visuals. Experience a surge in sales as customers engage with lifelike product representations, driving informed purchasing decisions.',
     image: screenshotReporting,
   },
 ]
@@ -60,25 +62,17 @@ export function PrimaryFeatures() {
   return (
     <section
       id="features"
-      aria-label="Features for running your books"
-      className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
+      aria-label="Features for running your 3d projects"
+      className="relative overflow-hidden bg-gray-900 pb-28 pt-20 sm:py-32"
     >
-      <Image
-        className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
-        src={backgroundImage}
-        alt=""
-        width={2245}
-        height={1636}
-        unoptimized
-      />
+     
       <Container className="relative">
         <div className="max-w-2xl md:mx-auto md:text-center xl:max-w-none">
-          <h2 className="font-display text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
-            Everything you need to run your books.
+          <h2 className="font-display font-bold  text-3xl tracking-tight text-white sm:text-4xl md:text-5xl">
+            Maximized Value, Minimized Effort
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-            Well everything you need if you aren’t that picky about minor
-            details like tax compliance.
+          Explore Metastudio’s tools, designed to elevate 3D projects and optimize your ROI.
           </p>
         </div>
         <Tab.Group
