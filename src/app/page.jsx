@@ -1,3 +1,4 @@
+
 import { CallToAction } from '@/components/CallToAction'
 import { Faqs } from '@/components/Faqs'
 import { Footer } from '@/components/Footer'
@@ -7,7 +8,7 @@ import { Pricing } from '@/components/Pricing'
 import { PrimaryFeatures } from '@/components/PrimaryFeatures'
 import { SecondaryFeatures } from '@/components/SecondaryFeatures'
 import { Testimonials } from '@/components/Testimonials'
-import CtaSection from '@/components/CtaSection' 
+import CtaSection from '@/components/CtaSection'
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <CtaSection />
         <PrimaryFeatures />
         <SecondaryFeatures />
-        <CallToAction />
+        {/* <CallToAction /> */}
         {/* <Testimonials /> */}
         <Pricing />
         <Faqs />
