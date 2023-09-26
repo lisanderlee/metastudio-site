@@ -93,10 +93,10 @@ function MobileNavigation() {
 
 export function Header() {
   return (
-    <header className=" absolute w-full  pt-7  bg-gray-900 ">
+    <header className=" absolute w-full  bg-gray-900  pt-7 ">
       <Container>
         <nav className="relative z-50 flex justify-between">
-          <div className="flex w-full justify-between items-baseline md:gap-x-12">
+          <div className="flex w-full items-baseline justify-between md:gap-x-12">
             <Link href="#" aria-label="Home">
               <Logo className="h-10 w-auto" />
             </Link>
@@ -105,24 +105,22 @@ export function Header() {
               {/* <NavLink href="#testimonials">Testimonials</NavLink> */}
               <NavLink href="#pricing">Pricing</NavLink>
             </div>
-            <div className='flex'>
-            <div className="hidden md:block mr-5">
-              <NavLink href="/login">Sign in</NavLink>
-            </div>
-            <Button href="/register" color="blue">
-              <span>
-                Get started <span className="hidden lg:inline">today</span>
-              </span>
-            </Button>
-            <div className="-mr-1 md:hidden">
-              <MobileNavigation />
-            </div>
+            <div className="flex">
+              <div className="mr-5 hidden md:block">
+                <NavLink href="/login">Sign in</NavLink>
+              </div>
+              <Link
+                href="/register"
+                className="block rounded-md bg-indigo-500 px-3 py-2 text-center text-sm font-semibold leading-6 text-white hover:bg-indigo-400 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+              >
+                Get started today
+              </Link>
+
+              <div className="-mr-1 md:hidden">
+                <MobileNavigation />
+              </div>
             </div>
           </div>
-        
-         
-           
-         
         </nav>
       </Container>
     </header>

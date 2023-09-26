@@ -5,11 +5,11 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - TaxPal',
-    default: 'TaxPal - Accounting made simple for small businesses',
+    template: '%s - MetaStudio',
+    default: 'MetaStudio - Amplify Your 3D Potential with Metastudio',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'Elevate your 3D experience with unmatched collaboration, asset management, and efficient deployment. ',
 }
 
 const inter = Inter({
